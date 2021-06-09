@@ -16,7 +16,9 @@ In this homework, the instructor gave us some problems to solve. This report is 
 
 ``
 img = imread('img.jpeg');
+
 L = imresize(img, [512,512]);
+
 I = im2gray(L);
 ``
 
@@ -132,7 +134,9 @@ Bilinear interpolation output:
 Here are my input and output images.
 Input:
 
-![bw](https://user-images.githubusercontent.com/60623941/121387379-4dd1dd80-c953-11eb-81b4-bc3b98145b94.png)
+
+![2021-06-09 (22)](https://user-images.githubusercontent.com/60623941/121396340-f2f0b400-c95b-11eb-8915-56e3c561ea70.png)
+
 
 Output:
 
