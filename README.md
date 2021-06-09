@@ -13,12 +13,15 @@ Here is my input picture and some different outputs using this function.
 ![2021-06-09](https://user-images.githubusercontent.com/60623941/121318465-f2ccc600-c913-11eb-871e-cbcc2da91e59.png)
 
 with the parameter 70 the output is:
+
 ![2021-06-09 (1)](https://user-images.githubusercontent.com/60623941/121318999-75ee1c00-c914-11eb-827a-42de34e0b6ba.png)
 
 with the parameter 120 the output is:
+
 ![2021-06-09 (2)](https://user-images.githubusercontent.com/60623941/121319063-8605fb80-c914-11eb-8dd4-035fc27968a5.png)
 
 with the parameter 187 the output is:
+
 ![2021-06-09 (3)](https://user-images.githubusercontent.com/60623941/121319105-8e5e3680-c914-11eb-9af7-e1a0bd209f07.png)
 
 -In second (4th) task I use my lecture notes to code a function for nearest neighbor interpolation. As input, I gave same image with question 1 and here is my 2'nd part of main code and the main code's whole output:
@@ -86,7 +89,17 @@ imshow(uint8(resized));
     ``
     
 input:
+
 ![2021-06-09 (12)](https://user-images.githubusercontent.com/60623941/121337047-ca00fc80-c924-11eb-8e8e-5e995a4ed65d.png)
 
 Nearest Neighbor interpolation output:
 
+![2021-06-09 (14)](https://user-images.githubusercontent.com/60623941/121339071-c9696580-c926-11eb-9503-5f5c8c03f29d.png)
+
+
+Bilinear interpolation output:
+
+![2021-06-09 (15)](https://user-images.githubusercontent.com/60623941/121339131-d8501800-c926-11eb-8891-25e979164de8.png)
+
+
+  Also, when I worked with rgb images I can see the difference between Bilinear interpolation and Nearest Neighbor interpolation. In Bilinear interpolation we can create more smmother and realistic images than the ones we created ehen using Nearest Neighbor interpolation.
