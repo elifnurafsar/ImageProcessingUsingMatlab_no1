@@ -1,5 +1,11 @@
 # ImageProcessingUsingMatlab_no1
 BIL467 HW1
+SETUP
+1)Download the files soru_3_4_5 and odev1soru6
+2)double tap to main functions
+3)Click the run button which located in editor bar.
+*you can also add the codes which are commented.
+Done...
 In this homework, the instructor gave us some problems to solve. This report is written for explain how I created solutions for each problem, which points I had difficulities and my observations from this task. 
 -We need a 512*512 grey scale image. My phone camera can took colorful and standart sized photos, to obtain some image which is suitable for these constraints I used
 ``
@@ -102,4 +108,25 @@ Bilinear interpolation output:
 ![2021-06-09 (15)](https://user-images.githubusercontent.com/60623941/121339131-d8501800-c926-11eb-8891-25e979164de8.png)
 
 
-  Also, when I worked with rgb images I can see the difference between Bilinear interpolation and Nearest Neighbor interpolation. In Bilinear interpolation we can create more smmother and realistic images than the ones we created ehen using Nearest Neighbor interpolation.
+  Also, when I worked with rgb images I can see the difference between Bilinear interpolation and Nearest Neighbor interpolation. In Bilinear interpolation we can create more smother and realistic images than the ones we created ehen using Nearest Neighbor interpolation.
+
+-In 6th task I create an image using paint. Then I followed steps given in assignment paper. I code a loop that iterates for size of image timesand computes distance pixels according to border lines. 
+  In this process first I tried matlab functions such as ``bwdist();`` and ``bwmorph(BW,'skel',Inf); ``
+Here are my input and output images.
+Input:
+
+![bw](https://user-images.githubusercontent.com/60623941/121387379-4dd1dd80-c953-11eb-81b4-bc3b98145b94.png)
+
+Output:
+
+![2021-06-09 (21)](https://user-images.githubusercontent.com/60623941/121387590-75c14100-c953-11eb-9a69-9f253810ef34.png)
+
+  In this task first, I tought that I should create a zero matrix and specify input image's borders as 1's and every other pixel (include the area of the image to background) as 0 in this matrix and update every 8 neighbors which are 0. Then I iterated DistanceTransform from 2 to size of the image. Then I got this output:
+  
+  ![2021-06-09 (20)](https://user-images.githubusercontent.com/60623941/121388714-61317880-c954-11eb-9941-ca2d4c297188.png)
+
+  
+   But this output does not look like which we saw in the class. Then I deleted the method -named contour- which makes shape's inside area and background zero.
+   I continue with DistanceTransform function, iterated from 1 to size of the image.
+
+
