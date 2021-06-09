@@ -1,11 +1,16 @@
 # ImageProcessingUsingMatlab_no1
 BIL467 HW1
+
 SETUP
+
 1)Download the files soru_3_4_5 and odev1soru6
 2)double tap to main functions
 3)Click the run button which located in editor bar.
 *you can also add the codes which are commented.
 Done...
+
+INTERPRETATIONS
+
 In this homework, the instructor gave us some problems to solve. This report is written for explain how I created solutions for each problem, which points I had difficulities and my observations from this task. 
 -We need a 512*512 grey scale image. My phone camera can took colorful and standart sized photos, to obtain some image which is suitable for these constraints I used
 ``
@@ -119,7 +124,8 @@ Input:
 
 Output:
 
-![2021-06-09 (21)](https://user-images.githubusercontent.com/60623941/121387590-75c14100-c953-11eb-9a69-9f253810ef34.png)
+![2021-06-09 (21)](https://user-images.githubusercontent.com/60623941/121391265-da31cf80-c956-11eb-9ea8-75e813db9300.png)
+
 
   In this task first, I tought that I should create a zero matrix and specify input image's borders as 1's and every other pixel (include the area of the image to background) as 0 in this matrix and update every 8 neighbors which are 0. Then I iterated DistanceTransform from 2 to size of the image. Then I got this output:
   
@@ -128,5 +134,9 @@ Output:
   
    But this output does not look like which we saw in the class. Then I deleted the method -named contour- which makes shape's inside area and background zero.
    I continue with DistanceTransform function, iterated from 1 to size of the image.
+   
+   OUTCOME
+   
+   In this assignment I learn the basics of image processing and recode its basic functions. I do not think my codes are so efficient but I tried my best in given time. I also observed differences between interpolation types which I learned from lessons and tried some different type of distance transform methods (just for fun). I was not able to code bicubic interpolation and after assignment ends I want to learn its algorithm from my instructors.
 
 
