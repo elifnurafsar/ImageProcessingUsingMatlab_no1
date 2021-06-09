@@ -70,7 +70,7 @@ imshow(uint8(resized));
 
 ![2021-06-09 (5)](https://user-images.githubusercontent.com/60623941/121326020-cf594980-c91a-11eb-860d-93c9d2c12c4d.png)
 
-here is the zoom-in examples:
+here are the zoom-in examples:
 
 ``
 resized = resizeNearestGreyScale(I,1.7);
@@ -90,7 +90,7 @@ imshow(uint8(resized));
   In this task I tried `` img_res = imresize(I, 1.7, 'bicubic'); `` function but cannot write code for this interpolation.
   
   -In third (5th) task I code bilinear and nearest neighbor interpolation methods for rgb images. In this section I just added one for foop for (3'rd) rgb dimension to old functions.For each pixel in image I processed each red, green and blue values and added these values to my new 3 dimensioned matrice's color-rgb- dimension.
-    Here is an example from neaarest neighbor for rgb images function:
+    Here is an example from nearest neighbor for rgb images function:
     
     
     ``
